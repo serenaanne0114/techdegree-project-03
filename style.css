@@ -1,0 +1,24 @@
+/* Base Element Styles */
+* {
+  box-sizing: border-box;;
+}
+
+body {
+  background-color: #FFFAF0;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 1em;
+}
+
+.container {
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+  padding: 2%;
+}
+
+/* Header Styles*/
+
+header {
+  background: #000000;
+  color: white;
+}
