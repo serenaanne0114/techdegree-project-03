@@ -41,6 +41,159 @@ header {
   width: 100%;
 }
 
-.latest-news {
-  color: #DCDCDC;
+.line-three {
+  width: 100%;
+  height: 2px;
+  border: 0;
 }
+
+.latest-news {
+  color: #A9A9A9;
+}
+
+/* form */
+form {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 2em;
+  padding: 0;
+  }
+
+  .wrap-form {
+    text-align: center;
+
+  }
+
+  legend {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .news-form {
+    margin-bottom: 25px;
+
+}
+
+/*Label*/
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #A9A9A9;
+}
+
+label.light {
+  display: inline;
+  font-weight: 300;
+}
+
+label.receive-news {
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+}
+
+/*input*/
+
+input[type="text"], input[type="email"], input[type="ring"] {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: 2px solid rgba(0,0,255,0.3);
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(255, 0, 0, 0.5) inset;
+}
+
+/*select*/
+
+select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(255, 0, 0, 0.5) inset;
+}
+
+/*textarea*/
+
+textarea {
+  width: 100%;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid rgba(0, 0, 255, 0.3);
+  margin-bottom: 0;
+  box-shadow: 0 1px 0 rgba(0, 0, 255, 0.5) inset;
+}
+
+textarea:focus {
+  color: #FFF0F5;
+}
+
+textarea:hover {
+  background-color: #ADD8E6;
+}
+
+select:focus,
+input:focus {
+    text-align: left;
+    outline: none;
+}
+
+/*radio checkbox*/
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 5px 4px 15px 0;
+}
+
+input[type="radio"]:checked+label,
+input[type="checkbox"]:checked+label {
+  font-weight: 700;
+}
+
+/*section news*/
+
+.receive-news {
+  width: 100%;
+}
+
+div.news-section {
+  border-radius: 5px;
+  padding: 5px;
+}
+/*button*/
+
+button {
+  padding: 19px 39px 18px 39px;
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  border: 0;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  box-shadow: 0 -1px 0 rgba(255, 0, 0, 0.5) inset
+  color: #FFF0F5;
+  background-color: #00CED1;
+}
+
+button:hover {
+  background-color: #FFB6C1;
+}
+
+/*footer style*/
+
+footer p {
+  color: #D3D3D3;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+/*Media Queries*/
