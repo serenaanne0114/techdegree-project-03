@@ -161,9 +161,13 @@ input[type="checkbox"]:checked+label {
 
 /*section news*/
 
+.contact-information {
+  width: 100%;
+  text-align: left;
+}
 .receive-news {
   width: 100%;
-  text-align: right;
+  text-align: left;
 }
 
 div.news-section {
