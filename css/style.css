@@ -163,6 +163,7 @@ input[type="checkbox"]:checked+label {
 
 .receive-news {
   width: 100%;
+  text-align: right;
 }
 
 div.news-section {
@@ -191,9 +192,60 @@ button:hover {
 /*footer style*/
 
 footer p {
-  color: #D3D3D3;
-  font-weight: lighter;
+  color: #778899;
+  font-weight: 500;
   font-style: italic;
 }
 
 /*Media Queries*/
+
+@media screen and (min-width:768px) {
+  .wrap-form {
+    margin: auto;
+    max-width: 900px;
+
+  }
+
+  .contact-information {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .contact-information input,
+  .contact-information select {
+    width: 78%;
+    display: inline-block;
+  }
+
+  .contact-information label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: auto;
+}
+
+
+
+  .receive-news,
+  .news-section
+   {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .receive-news input,
+  .receive-news select,
+  .news-section input,
+  .news-section select {
+    width: 78%;
+    display: inline-block;
+  }
+
+  .receive-news label,
+  .news-section label {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: auto;
+  }
+
+}
