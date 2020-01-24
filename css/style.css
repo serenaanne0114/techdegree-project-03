@@ -228,7 +228,10 @@ footer p {
     margin-right: auto;
 }
 
-
+.news-section {
+  display: flex;
+  flex-direction: column;
+}
 
   .receive-news,
   .news-section
