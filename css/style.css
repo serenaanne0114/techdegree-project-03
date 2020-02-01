@@ -92,10 +92,11 @@ label {
   color: #000000;
 }
 
-label.checkmark,
+label.checkbox,
 label.radio {
   display: inline;
   font-weight: 300;
+  margin-left: 32px;
 }
 
 /*input*/
@@ -115,12 +116,10 @@ input::placeholder {
   color: #A9A9A9;
 }
 
-
-input.zip {
-  text-align: left;
-  width: 40%;
-  float: left;
+#zip-code {
+  width: 152px;
 }
+
 
 
 
@@ -196,7 +195,7 @@ input[type="checkbox"]:checked+label {
 .news-section {
   display: block;
   justify-content: space-between;
-  
+
 }
 
 
@@ -272,12 +271,6 @@ footer p {
     margin-top: 15px;
     margin-right: auto;
   }
-
-  input.zip {
-    width: 30%;
-    text-align: left;
-  }
-
 
   .receive-news,
   .news-section
