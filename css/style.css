@@ -90,13 +90,15 @@ label {
   display: block;
   margin-bottom: 8px;
   color: #000000;
+
 }
 
 label.checkbox,
 label.radio {
-  display: inline;
+  display: block;
   font-weight: 300;
   margin-left: 15px;
+
 }
 
 /*input*/
@@ -116,9 +118,10 @@ input::placeholder {
   color: #A9A9A9;
 }
 
-#zip-code {
-  width: 152px;
+input.zip {
+  width: 30%;
 }
+
 
 
 
@@ -170,7 +173,7 @@ input:focus {
 
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline-block;
+  display: inline;
   width: 15px;
   vertical-align: top;
 }
@@ -183,20 +186,13 @@ input[type="checkbox"]:checked+label {
 
 
 .receive-news,
-.news-section,
-
- {
+.news-section {
   display: block;
   justify-content: space-between;
   text-align: left;
   padding: 15px;
 }
 
-.news-section {
-  display: block;
-  justify-content: space-between;
-
-}
 
 
 /*section news*/
@@ -205,14 +201,21 @@ input[type="checkbox"]:checked+label {
   width: 100%;
   text-align: left;
 }
+
+.zip-code {
+  text-align: left;
+}
+
 .receive-news {
   width: 100%;
   text-align: left;
 }
 
 div.news-section {
+  display: block;
   border-radius: 5px;
   padding: 5px;
+  text-align: left;
 }
 /*button*/
 
@@ -259,6 +262,13 @@ footer p {
     justify-content: space-between;
 
   }
+
+  .zip input {
+    display: flex;
+    flex-direction: row;
+  }
+
+
 
   .contact-information input,
   .contact-information select {
