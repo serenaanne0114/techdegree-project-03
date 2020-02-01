@@ -16,6 +16,10 @@ body {
   padding: 2%;
 }
 
+.news-form {
+  text-align: left;
+}
+
 /* Header Styles*/
 
 header {
@@ -88,23 +92,13 @@ label {
   color: #000000;
 }
 
-label.light {
+label.checkmark,
+label.radio {
   display: inline;
   font-weight: 300;
 }
 
-label.receive-news {
-  margin-top: 12px;
-  margin-bottom: 12px;
-
-}
-
-
-
-
-
 /*input*/
-
 
 input[type="text"], input[type="email"], input[type="ring"] {
   width: 100%;
@@ -127,30 +121,6 @@ input.zip {
   width: 40%;
   float: left;
 }
-
-/*checkbox*/
-
-label.checkbox {
-  display: inline;
-  }
-
-  .checkbox {
-    display: none;
-  }
-
-
-
-
-
-
-/*radio*/
-label.radio {
-  display: inline;
-  }
-
-  .radio {
-    display: none;
-    }
 
 
 
@@ -206,17 +176,28 @@ input[type="radio"] {
   vertical-align: top;
 }
 
-.light {
-  display: inline-block;
-  width: 200px;
-  word-break: break-all;
-}
 
 input[type="radio"]:checked+label,
 input[type="checkbox"]:checked+label {
   font-weight: 700;
 }
 
+
+.receive-news,
+.news-section,
+
+ {
+  display: block;
+  justify-content: space-between;
+  text-align: left;
+  padding: 15px;
+}
+
+.news-section {
+  display: block;
+  justify-content: space-between;
+  
+}
 
 
 /*section news*/
@@ -297,16 +278,17 @@ footer p {
     text-align: left;
   }
 
-.news-section {
-  display: flex;
-  flex-direction: column;
-}
 
   .receive-news,
   .news-section
    {
-    display: flex;
+    display: block;
     justify-content: space-between;
+    text-align: left;
+  }
+
+  .news-section {
+    display: block;
   }
 
   .receive-news input,
@@ -317,10 +299,9 @@ footer p {
   }
 
   .receive-news label,
-  .news-section label {
+  .news-section label
+    {
     display: inline-block;
-    margin-top: 15px;
-    margin-right: auto;
   }
 
 }
