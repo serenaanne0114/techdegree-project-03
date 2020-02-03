@@ -113,13 +113,13 @@ input[type="text"], input[type="email"], input[type="ring"] {
   box-shadow: 0 1px 0 rgba(255, 0, 0, 0.5) inset;
 }
 
-input::placeholder {
+input::placeholder { /*Chrome, Firefox, Opera, Safari 10.1+ */
   text-align: right;
   color: #A9A9A9;
 }
 
-input.zip {
-  width: 30%;
+input.zip-code {
+  width: 50%;
 }
 
 
@@ -173,9 +173,10 @@ input:focus {
 
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline;
+  display: block;
   width: 15px;
   vertical-align: top;
+  float: left;
 }
 
 
@@ -263,12 +264,9 @@ footer p {
 
   }
 
-  .zip input {
-    display: flex;
-    flex-direction: row;
+  .zip-code {
+    width: 50%;
   }
-
-
 
   .contact-information input,
   .contact-information select {
