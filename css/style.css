@@ -11,13 +11,17 @@ body {
 
 .container {
   text-align: center;
-  max-width: 70%;
+  max-width: 100%;
   margin: auto;
   padding: 2%;
 }
 
+
+
 .news-form {
   text-align: left;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 /* Header Styles*/
@@ -50,11 +54,13 @@ header {
   height: 2px;
   border: 0;
   margin: 4px 0;
+  margin-bottom: 25px;
   background-color: #000000;
 }
 
 .latest-news {
   color: #A9A9A9;
+  margin-top: 20px;
 }
 
 /* form */
@@ -68,8 +74,8 @@ fieldset {
   padding: 0;
   }
 
-  .wrap-form {
-    text-align: center;
+.wrap-form {
+    text-align: left;
     padding: 0 18px;
 
   }
@@ -79,10 +85,7 @@ fieldset {
     font-size: 1em;
   }
 
-  .news-form {
-    margin-bottom: 25px;
 
-}
 
 /*Label*/
 
@@ -118,13 +121,9 @@ input::placeholder { /*Chrome, Firefox, Opera, Safari 10.1+ */
   color: #A9A9A9;
 }
 
-input.zip-code {
-  width: 50%;
+#zip-code {
+  width: 120px;
 }
-
-
-
-
 
 /*select*/
 
@@ -203,13 +202,12 @@ input[type="checkbox"]:checked+label {
   text-align: left;
 }
 
-.zip-code {
-  text-align: left;
-}
+
 
 .receive-news {
   width: 100%;
   text-align: left;
+  margin-bottom: 4px;
 }
 
 div.news-section {
@@ -217,6 +215,7 @@ div.news-section {
   border-radius: 5px;
   padding: 5px;
   text-align: left;
+  margin-left: 16px;
 }
 /*button*/
 
@@ -229,7 +228,7 @@ button {
   border-width: 1px 1px 3px;
   margin-bottom: 10px;
   box-shadow: 0 -1px 0 rgba(255, 0, 0, 0.5) inset
-  color: #FFF0F5;
+  color: #FFFFFF;
   background-color: #00CED1;
 }
 
@@ -264,9 +263,13 @@ footer p {
 
   }
 
-  .zip-code {
-    width: 50%;
+  #zip-code {
+    width: 300px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: nowrap;
   }
+
 
   .contact-information input,
   .contact-information select {
@@ -303,6 +306,7 @@ footer p {
   .news-section label
     {
     display: inline-block;
+
   }
 
 }
