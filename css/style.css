@@ -1,6 +1,6 @@
 /* Base Element Styles */
 * {
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,8 +20,9 @@ body {
 
 .news-form {
   text-align: left;
-  margin-top: 4px;
-  margin-bottom: 4px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 18px;
 }
 
 /* Header Styles*/
@@ -93,7 +94,7 @@ label {
   display: block;
   margin-bottom: 8px;
   color: #000000;
-
+  width: 150px;
 }
 
 label.checkbox,
@@ -106,14 +107,18 @@ label.radio {
 
 /*input*/
 
-input[type="text"], input[type="email"], input[type="ring"] {
+input[type="text"], input[type="email"], input[type="tel"] {
   width: 100%;
   margin: 10px 0;
   padding: 10px;
   outline: none;
-  border: 2px solid rgba(0, 0, 255, 0.3);
+  background-color: #EEEEEE;
   border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(255, 0, 0, 0.5) inset;
+  border: 3px solid #EEE;
+}
+
+input:focus {
+  border: 3px solid #0000FF;
 }
 
 input::placeholder { /*Chrome, Firefox, Opera, Safari 10.1+ */
@@ -132,34 +137,40 @@ select {
   margin: 10px 0;
   padding: 10px;
   outline: none;
-  border: 2px solid rgba(0, 0, 255, 0.3);
+  border: 3px solid #EEE;
   border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(255, 0, 0, 0.5) inset;
+  background-color: #EEE;
+}
+
+select[name="user_state"] option[value=""] {
+  color: #bbbbbb;
+}
+
+select:focus {
+  border: 3px solid #0000FF;
 }
 
 select::placeholder {
   text-align: right;
-  color: #A9A9A9;
+  color: #bbbbbb;
 }
 /*textarea*/
 
 textarea {
   width: 100%;
-  outline: none;
   border-radius: 4px;
   padding: 10px;
   margin: 10px 0;
   margin-bottom: 0;
-
+  background-color: #EEE;
+  border: 3px solid #EEE;
 }
 
 textarea:focus {
-  color: #FFF0F5;
+  border: 3px solid #0000FF;
 }
 
-textarea:hover {
-  background-color: #ADD8E6;
-}
+
 
 select:focus,
 input:focus {
@@ -189,7 +200,7 @@ input[type="checkbox"]:checked+label {
   display: block;
   justify-content: space-between;
   text-align: left;
-  padding: 15px;
+  margin: 10px 0;
 }
 
 
@@ -214,7 +225,7 @@ div.news-section {
   border-radius: 5px;
   padding: 5px;
   text-align: left;
-  margin-left: 16px;
+
 }
 /*button*/
 
@@ -224,15 +235,14 @@ button {
   font-size: 18px;
   width: 100%;
   border: 0;
-  border-width: 1px 1px 3px;
+  border-radius: 5px;
   margin-bottom: 10px;
-  box-shadow: 0 -1px 0 rgba(255, 0, 0, 0.5) inset;
   color: #FFFFFF;
-  background-color: #00CED1;
+  background-color: #1E90FF;
 }
 
 button:hover {
-  background-color: #FFB6C1;
+  background-color: #0066CC;
 }
 
 /*footer style*/
@@ -257,16 +267,15 @@ footer p {
   }
 
   .contact-information {
-    display: flex;
-    justify-content: space-between;
+    display: inline-block;
+
 
   }
 
   #zip-code {
     width: 300px;
-    display: flex;
-    justify-content: start;
-    flex-wrap: nowrap;
+    display: inline-block;
+
   }
 
 
@@ -279,7 +288,7 @@ footer p {
   .contact-information label {
     display: inline-block;
     margin-top: 15px;
-    margin-right: auto;
+
   }
 
   .receive-news,
@@ -295,7 +304,7 @@ footer p {
   }
 
   .receive-news input,
-  .receive-news select,
+  .receive-news select
    {
     width: 100%;
     display: inline-block;
